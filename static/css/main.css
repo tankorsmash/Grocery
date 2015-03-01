@@ -12,3 +12,23 @@
     margin-top: 2%;
     margin-bottom: 2%;
 }
+
+.company-wrap {
+
+}
+
+.store-wrap {
+    margin-left: 2px;
+}
+
+.aisle-wrap {
+    margin-left: 4px;
+}
+
+.food-wrap {
+    margin-left: 6px;
+}
+
+h5 {
+    margin-left: 8px;
+}
