@@ -29,6 +29,6 @@
     margin-left: 6px;
 }
 
-h5 {
-    margin-left: 8px;
+.active-aisle {
+    background-color: red;
 }
