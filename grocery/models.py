@@ -25,6 +25,7 @@ class Aisle(models.Model):
     name = models.CharField(max_length=255)
 
     store = models.ForeignKey(Store, related_name="aisles")
+
     def __unicode__(self):
         return u"%s" % self.name
 

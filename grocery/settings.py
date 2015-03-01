@@ -30,6 +30,10 @@ TEMPLATE_DIRS = (
         'templates/',
         )
 
+STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, "static"),
+        )
+
 
 # Application definition
 
