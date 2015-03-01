@@ -9,7 +9,13 @@ from django.shortcuts import render_to_response
 from models import FoodItem, Aisle, Store, Company
 
 def index(request):
-    return render_to_response("grocery/index.html", {"data": 123})
+    context = {
+            "companies" : Company.objects.all(),
+            "stores" : Store.objects.all(),
+            "aisles" : Aisle.objects.all(),
+            "food_items" : FoodItem.objects.all(),
+            }
+    return render_to_response("grocery/index.html", context)
 
 urlpatterns = patterns('',
     # Examples:

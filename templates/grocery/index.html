@@ -1,2 +1,27 @@
-<div>
-</div>
+<head>
+</head>
+<body>
+    <div>
+        {% for company in companies %}
+        <div>
+            {{ company }}
+            <div>
+            {% for store in stores %}
+            <div>
+                {{ store }}
+                {% for aisle in aisles %}
+                <div>
+                    {{ aisle }}
+                    {% for food_item in food_items %}
+                    <div>
+                        {{ food_item }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
