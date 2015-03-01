@@ -3,16 +3,20 @@
 <body>
     <div>
         {% for company in companies %}
+        <h1> Company </h1>
         <div>
             {{ company }}
             <div>
-            {% for store in stores %}
+            {% for store in company.stores.all %}
+            <h2> Store </h2>
             <div>
                 {{ store }}
-                {% for aisle in aisles %}
+                {% for aisle in store.aisles.all %}
+                <h3> Aisle </h3>
                 <div>
                     {{ aisle }}
-                    {% for food_item in food_items %}
+                    <h4> FoodItems </h4>
+                    {% for food_item in aisle.food_items.all %}
                     <div>
                         {{ food_item }}
                     </div>
