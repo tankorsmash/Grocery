@@ -32,7 +32,8 @@
                                         <h4> FoodItems </h4>
                                         {% for food_item in aisle.food_items.all %}
                                         <div>
-                                            {{ food_item }}
+                                            <div class="food-name">{{ food_item }} (${{ food_item.cost }})</div>
+                                            <div class="food-desc">{{ food_item.description }}</div>
                                         </div>
                                         {% endfor %}
                                     </div>

@@ -29,6 +29,11 @@
     margin-left: 6px;
 }
 
+.food-desc {
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
 .active-aisle {
     background-color: red;
 }
